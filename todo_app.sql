@@ -19,3 +19,8 @@ ALTER TABLE task
 ALTER TABLE task
     ALTER COLUMN updated_at SET NOT NULL,
     ALTER COLUMN updated_at SET DEFAULT now();
+
+INSERT INTO task
+VALUES
+    (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
+
