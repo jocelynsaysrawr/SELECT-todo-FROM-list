@@ -47,3 +47,9 @@ VALUES
 INSERT INTO task
 VALUES
     (DEFAULT, 'third mistake', 'another test entry', DEFAULT, DEFAULT, NULL);
+
+SELECT title FROM task WHERE title LIKE '%mistake%';
+
+DELETE FROM task WHERE title = 'mistake 1';
+
+SELECT title, description FROM task WHERE title LIKE '%mistake%';
