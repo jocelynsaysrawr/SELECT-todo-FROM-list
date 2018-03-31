@@ -35,3 +35,15 @@ UPDATE task SET completed_at = now() WHERE title = 'Study SQL';
 SELECT title, description FROM task WHERE completed_at is NULL;
 
 SELECT * FROM task ORDER BY created_at DESC;
+
+INSERT INTO task
+VALUES
+    (DEFAULT, 'mistake 1', 'another test entry', DEFAULT, DEFAULT, NULL);
+
+INSERT INTO task
+VALUES
+    (DEFAULT, 'mistake 2', 'a test entry', DEFAULT, DEFAULT, NULL);
+
+INSERT INTO task
+VALUES
+    (DEFAULT, 'third mistake', 'another test entry', DEFAULT, DEFAULT, NULL);
