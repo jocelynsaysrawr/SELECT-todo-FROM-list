@@ -24,3 +24,6 @@ INSERT INTO task
 VALUES
     (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
 
+INSERT INTO task
+VALUES
+    (DEFAULT, 'Study PostgreSQL', 'Read all the documentation', DEFAULT, DEFAULT, NULL);
