@@ -27,3 +27,11 @@ VALUES
 INSERT INTO task
 VALUES
     (DEFAULT, 'Study PostgreSQL', 'Read all the documentation', DEFAULT, DEFAULT, NULL);
+
+SELECT title FROM task WHERE completed_at is NULL;
+
+UPDATE task SET completed_at = now() WHERE title = 'Study SQL';
+
+SELECT title, description FROM task WHERE completed_at is NULL;
+
+SELECT * FROM task ORDER BY created_at DESC;
