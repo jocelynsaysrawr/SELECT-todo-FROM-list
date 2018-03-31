@@ -55,3 +55,5 @@ DELETE FROM task WHERE title = 'mistake 1';
 SELECT title, description FROM task WHERE title LIKE '%mistake%';
 
 DELETE FROM task WHERE title LIKE '%mistake%';
+
+SELECT * FROM task ORDER BY title ASC;
