@@ -53,3 +53,5 @@ SELECT title FROM task WHERE title LIKE '%mistake%';
 DELETE FROM task WHERE title = 'mistake 1';
 
 SELECT title, description FROM task WHERE title LIKE '%mistake%';
+
+DELETE FROM task WHERE title LIKE '%mistake%';
